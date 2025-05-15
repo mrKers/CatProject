@@ -30,13 +30,15 @@ data class BreedNetworkEntity(
     @Expose
     var wikipedia_url: String?,
 
-    @SerializedName("image")
-    @Expose
-    var image: Image?,
+//    @SerializedName("image")
+//    @Expose
+//    var image: Image?,
+//
+//    @SerializedName("weight")
+//    @Expose
+//    var weight: Weight,
 
-    @SerializedName("weight")
-    @Expose
-    var weight: Weight,
+
 
     @SerializedName("temperament")
     @Expose
