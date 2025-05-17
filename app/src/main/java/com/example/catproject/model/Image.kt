@@ -1,9 +1,13 @@
-package com.example.catproject.retrofit
+package com.example.catproject.model
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class CatNetworkEntity (
+class Image(
+    @SerializedName("height")
+    @Expose
+    var height: Int,
+
     @SerializedName("id")
     @Expose
     var id: String,
@@ -15,8 +19,4 @@ class CatNetworkEntity (
     @SerializedName("width")
     @Expose
     var width: Int,
-
-    @SerializedName("height")
-    @Expose
-    var height: Int,
 )

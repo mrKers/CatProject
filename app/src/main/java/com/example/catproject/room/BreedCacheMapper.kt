@@ -1,14 +1,15 @@
 package com.uca.michiapp.room
 
-import com.uca.michiapp.model.Breed
-import com.uca.michiapp.retrofit.BreedNetworkEntity
-import com.uca.michiapp.utils.EntityMapper
+import com.example.catproject.EntityMapper
+import com.example.catproject.model.Breed
+import com.example.catproject.room.BreedCacheEntity
+
 import javax.inject.Inject
 
 class BreedCacheMapper
 @Inject
 constructor():
-        EntityMapper<BreedCacheEntity, Breed>{
+        EntityMapper<BreedCacheEntity, Breed> {
 
         override fun mapFromEntity(entity: BreedCacheEntity): Breed {
                 return Breed(

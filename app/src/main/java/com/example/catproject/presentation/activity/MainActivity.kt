@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.example.catproject.R
+import com.example.catproject.R.id.tabLayout
 import com.example.catproject.presentation.ViewPagerAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val viewPager = findViewById<ViewPager2>(R.id.viewPager)
-        val tabLayout = findViewById<TabLayout>(R.id.tabLayout)
+        val tabLayout = findViewById<TabLayout>(tabLayout)
 
         // Настройка адаптера
         viewPager.adapter = ViewPagerAdapter(this)

@@ -2,6 +2,8 @@ package com.example.catproject.retrofit
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
+import com.example.catproject.model.Image
+import com.example.catproject.model.Weight
 
 
 data class BreedNetworkEntity(
@@ -30,14 +32,13 @@ data class BreedNetworkEntity(
     @Expose
     var wikipedia_url: String?,
 
-//    @SerializedName("image")
-//    @Expose
-//    var image: Image?,
-//
-//    @SerializedName("weight")
-//    @Expose
-//    var weight: Weight,
+    @SerializedName("image")
+    @Expose
+    var image: Image?,
 
+    @SerializedName("weight")
+    @Expose
+    var weight: Weight,
 
 
     @SerializedName("temperament")

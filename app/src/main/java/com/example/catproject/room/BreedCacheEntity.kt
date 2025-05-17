@@ -1,13 +1,10 @@
-package com.uca.michiapp.room
+package com.example.catproject.room
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import androidx.room.TypeConverter
-import com.google.gson.annotations.Expose
-import com.google.gson.annotations.SerializedName
-import com.uca.michiapp.model.Image
-import com.uca.michiapp.model.Weight
+import com.example.catproject.model.Image
+import com.example.catproject.model.Weight
 
 @Entity(tableName = "breeds")
 class BreedCacheEntity (

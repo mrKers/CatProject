@@ -1,5 +1,6 @@
-package com.uca.michiapp.retrofit
+package com.example.catproject.retrofit
 
+import com.example.catproject.retrofit.BreedNetworkEntity
 import retrofit2.http.GET
 
 interface BreedRetroFit {

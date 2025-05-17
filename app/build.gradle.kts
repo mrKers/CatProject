@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
 
     id("com.google.dagger.hilt.android")
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -39,7 +40,8 @@ android {
 
 dependencies {
     implementation(libs.hilt.android)
-    annotationProcessor(libs.hilt.android.compiler)
+    implementation(libs.androidx.adapters)
+    kapt(libs.hilt.android.compiler)
     implementation (libs.androidx.viewpager2)
 
     implementation (libs.androidx.recyclerview)
@@ -57,7 +59,7 @@ dependencies {
 
     implementation(libs.androidx.room.runtime)
     //noinspection KaptUsageInsteadOfKsp
-    annotationProcessor(libs.androidx.room.compiler)
+    kapt(libs.androidx.room.compiler)
     implementation(libs.androidx.room.ktx)// для поддержки Kotlin Coroutines
 
     implementation(libs.retrofit)

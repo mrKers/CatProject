@@ -1,13 +1,13 @@
-package com.uca.michiapp.retrofit
+package com.example.catproject.retrofit
 
-import com.uca.michiapp.model.Cat
-import com.uca.michiapp.utils.EntityMapper
+import com.example.catproject.EntityMapper
+import com.example.catproject.model.Cat
 import javax.inject.Inject
 
 class NetworkMapper
 @Inject
 constructor(): EntityMapper<CatNetworkEntity, Cat> {
-    override fun mapFromEntity(entity: CatNetworkEntity): Cat{
+    override fun mapFromEntity(entity: CatNetworkEntity): Cat {
         return Cat(
             id = entity.id,
             url = entity.url,

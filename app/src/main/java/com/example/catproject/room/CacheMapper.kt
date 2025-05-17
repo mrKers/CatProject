@@ -1,7 +1,8 @@
-package com.uca.michiapp.room
+package com.example.catproject.room
 
-import com.uca.michiapp.model.Cat
-import com.uca.michiapp.utils.EntityMapper
+import com.example.catproject.EntityMapper
+import com.example.catproject.model.Cat
+import com.uca.michiapp.room.CatCacheEntity
 import javax.inject.Inject
 
 class CacheMapper

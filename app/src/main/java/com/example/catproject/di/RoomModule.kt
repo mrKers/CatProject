@@ -4,15 +4,17 @@ import android.content.Context
 import androidx.room.Room
 import com.uca.michiapp.room.BreedDao
 import com.uca.michiapp.room.CatDao
-import com.uca.michiapp.room.CatDatabase
+import com.example.catproject.room.CatDatabase
+import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 
-@Singleton
-@InstallIn(ApplicationContext::class)
+@Module
+@InstallIn(SingletonComponent::class)
 object RoomModule {
 
     @Singleton

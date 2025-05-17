@@ -2,8 +2,8 @@ package com.example.catproject.di
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import com.uca.michiapp.retrofit.BreedRetroFit
-import com.uca.michiapp.retrofit.CatRetroFit
+import com.example.catproject.retrofit.BreedRetroFit
+import com.example.catproject.retrofit.CatRetroFit
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
