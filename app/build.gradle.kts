@@ -39,6 +39,9 @@ android {
 }
 
 dependencies {
+    implementation(libs.logging.interceptor.v4120)
+    implementation(libs.vbpd)
+
     implementation(libs.hilt.android)
     implementation(libs.androidx.adapters)
     kapt(libs.hilt.android.compiler)

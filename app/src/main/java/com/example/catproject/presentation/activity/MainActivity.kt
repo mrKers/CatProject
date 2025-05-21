@@ -2,6 +2,7 @@ package com.example.catproject.presentation.activity
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -9,6 +10,7 @@ import androidx.viewpager2.widget.ViewPager2
 import com.example.catproject.R
 import com.example.catproject.R.id.tabLayout
 import com.example.catproject.presentation.ViewPagerAdapter
+import com.example.catproject.viewmodel.HiltViewModelCat
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint
@@ -32,8 +34,8 @@ class MainActivity : AppCompatActivity() {
         // Связывание TabLayout с ViewPager2
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->
             tab.text = when(position) {
-                0 -> "First"
-                1 -> "Second"
+                0 -> "Коты"
+                1 -> "Избранные коты"
                 else -> null
             }
         }.attach()
