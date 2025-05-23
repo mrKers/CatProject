@@ -15,6 +15,8 @@ class RepositoryCat @Inject constructor(
     suspend fun getList(): List<BreedNetworkEntity> {
         return breedApiService.get()
     }
-
+    suspend fun getListCats(): List<CatNetworkEntity> {
+        return apiService.get()
+    }
 
 }

@@ -3,7 +3,7 @@ package com.example.catproject.retrofit
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-class CatNetworkEntity (
+data class CatNetworkEntity (
     @SerializedName("id")
     @Expose
     var id: String,

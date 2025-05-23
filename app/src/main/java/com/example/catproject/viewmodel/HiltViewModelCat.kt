@@ -16,12 +16,15 @@ class HiltViewModelCat @Inject constructor(
     private val repository: RepositoryCat
 ) : ViewModel() {
 
-    private val _catList = MutableStateFlow<List<BreedNetworkEntity>>(emptyList())
-    val catList: StateFlow<List<BreedNetworkEntity>> = _catList
+    private val _catList = MutableStateFlow<List<CatNetworkEntity>>(emptyList())
+    val catList: StateFlow<List<CatNetworkEntity>> = _catList
+
+    private val _breedList = MutableStateFlow<List<BreedNetworkEntity>>(emptyList())
+    val breedList: StateFlow<List<BreedNetworkEntity>> = _breedList
 
     fun getData() {
         viewModelScope.launch {
-            _catList.value = repository.getList()
+            _catList.value = repository.getListCats()
         }
     }
 }
